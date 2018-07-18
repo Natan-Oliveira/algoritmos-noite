@@ -1,0 +1,38 @@
+<html>
+<script>
+    //Faça um Programa que leia três números e mostre o maior deles.
+
+    let valor1 = parseFloat(prompt('Digite o valor 1'));
+
+    let valor2 = parseFloat(prompt('Digite o valor 2'));
+
+    let valor3 = parseFloat(prompt('Digite o valor 3'));
+
+    if (valor1 > valor2) {
+        auxiliar = valor1;
+        valor1 = valor2;
+        valor2 = auxiliar;
+
+    }
+    if (valor2 > valor3) {
+        auxiliar = valor2;
+        valor2 = valor3;
+        valor3 = auxiliar;
+    }
+
+     if (valor1 > valor2) {
+        auxiliar = valor1;
+        valor1 = valor2;
+        valor2 = auxiliar;
+
+    }
+    alert('o maior e o ' + valor3 + ' o menor e valor ' + valor1);
+
+
+
+
+
+
+</script>
+
+</html>

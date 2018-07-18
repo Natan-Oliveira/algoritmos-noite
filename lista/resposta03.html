@@ -1,0 +1,32 @@
+<html>
+<meta charset="utf-8">   
+<script>
+//Faça um Programa que leia 4 notas, mostre as notas e a média na tela.
+let num1 = parseFloat(prompt('Digite a Primeira nota'));
+let num2 = parseFloat(prompt('Digite a Segunda nota'));
+let num3 = parseFloat(prompt('Digite a Terceira nota'));
+let num4 = parseFloat(prompt('Digite a Quarta nota'));
+
+let numeros = new Array(num1, num2, num3, num4);
+let soma = 0;
+let notas = '';
+
+
+for (let i = 0; i < numeros.length; i++) {
+
+    soma +=  numeros[i]; 
+    notas += numeros[i] + ' , ';
+}
+
+if(soma >=6){
+    alert('o aluno está aprovado - media ' + soma/numeros.length);
+
+}else if (soma >4){
+    alert('o aluno está em recuperaçâo - media ' + soma/numeros.length);
+}else{
+    alert('o aluno está reprovado - media ' + soma/numeros.length);
+}
+alert(notas);
+
+</script>    
+</html>

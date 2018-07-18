@@ -1,0 +1,21 @@
+<html>
+<meta charset="utf-8">
+<script>
+//Nome na vertical em escada. Modifique o programa anterior de forma a mostrar o nome em formato de escada.
+let nome = 'natanael';
+
+let nome_inverso = '';
+
+for (let i = 0; i <= nome.length - 1; i++) {
+    for(let j = 0; j <= i; j++){
+        nome_inverso += nome.charAt(i);
+    }
+    nome_inverso += '\n';
+}
+
+alert(nome_inverso.toUpperCase()); 
+
+
+</script>
+
+</html>
